@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="https://haloged.github.io/haloged1/logo001.ico" type="image/x-icon">
+    <title>Haloged Studio 赛事</title>
+</head>
+<body>
+    <!--导航栏 开始-->
+    <div class="b-example-divider"></div>
+    <header class="p-3 bg-dark text-white">
+      <div class="container">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+          <a href="./index.html" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+            <img src="./Haloged Studio 赛事 (4).png">
+          </a>
+  
+          <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+            <li><a href="#" class="nav-link px-2 text-secondary">主页</a></li>
+            <li><a href="#" class="nav-link px-2 text-white">赛事</a></li>
+            <li><a href="#" class="nav-link px-2 text-white">产品</a></li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-bs-toggle="dropdown">
+                  工具
+                </a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="./tools/markdown/examples/simple.html">在线Markdown编辑器</a>
+                  <a class="dropdown-item" href="./tools/dm/index.html">在线HTML代码编辑器</a>
+                  <a class="dropdown-item" href="#">临时文件传输</a>
+                  <a class="dropdown-item" href="./tools/yy/index.php">一言API</a>
+                </div>
+              </li>
+            <li><a href="#" class="nav-link px-2 text-white">关于</a></li>
+          </ul>
+  
+          <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+            <input type="search" class="form-control form-control-dark" placeholder="Search..." aria-label="Search">
+          </form>
+  
+          <div class="text-end">
+            <button type="button" class="btn btn-outline-light me-2" onclick="loginciock()">登录</button>
+            <button type="button" class="btn btn-warning" onclick="re()">注册</button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!--导航栏 结束-->
+
+    <p>TEST.</p>
+</body>
+
+<!--定义login-->
+<script>
+    function loginciock(){
+        window.location.replace("https://haloged-studio.github.io/login.html")
+    }
+    function re(){
+        window.location.replace("https://shequ.codemao.cn/?type=register")
+    }
+</script>
+
+<script src="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/js/bootstrap.bundle.min.js"></script>
+<script src="https://gitee.com/haloged/Chowder/raw/main/js/log.js"></script>
+<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdn.staticfile.org/foundation/5.5.3/js/foundation.min.js"></script>
+<script src="https://cdn.staticfile.org/foundation/5.5.3/js/vendor/modernizr.js"></script>
+</html>

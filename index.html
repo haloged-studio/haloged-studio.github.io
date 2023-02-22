@@ -1,0 +1,95 @@
+<!--md,过年了官方网站就我一个人在开发，有没有人来帮帮我啊！！！ 2023.2.2 for haloged-->
+<!--这年都过完了，怎么还是没有人啊！！！ 2023.2.12 by haloged-->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="https://haloged.github.io/haloged1/logo001.ico" type="image/x-icon">
+    <link href="./scr/css/index.css" rel="stylesheet">
+    <title>haloged studio</title>
+</head>
+<body>
+    <div class="b-example-divider"></div>
+    <header class="p-3 bg-dark text-white">
+      <div class="container">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+          <a href="./index.html" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+            <img src="./HALOGED STUDIO (3).png">
+          </a>
+  
+          <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+            <li><a href="#" class="nav-link px-2 text-secondary">主页</a></li>
+            <li><a href="./match.html" class="nav-link px-2 text-white">赛事</a></li>
+            <li><a href="#" class="nav-link px-2 text-white">产品</a></li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-bs-toggle="dropdown">
+                  工具
+                </a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="./tools/markdown/examples/simple.html">在线Markdown编辑器</a>
+                  <a class="dropdown-item" href="./tools/dm/index.html">在线HTML代码编辑器</a>
+                  <a class="dropdown-item" href="#">临时文件传输</a>
+                  <a class="dropdown-item" href="./tools/yy/index.php">一言API</a>
+                </div>
+              </li>
+            <li><a href="./about.html" class="nav-link px-2 text-white">关于</a></li>
+          </ul>
+  
+          <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+            <input type="search" class="form-control form-control-dark" placeholder="Search..." aria-label="Search">
+          </form>
+  
+          <div class="text-end">
+            <button type="button" class="btn btn-outline-light me-2" onclick="loginciock()">登录</button>
+            <button type="button" class="btn btn-warning" onclick="re()">注册</button>
+          </div>
+        </div>
+      </div>
+    </header>
+    
+    <div class="banner-imgBox">
+        <div class="banner-imgBox2">
+            <img src="https://s1.vika.cn/space/2023/01/25/49e4a728fbe64fb4a305ddf7a733e418" alt="" width="937" height="360">
+            <img src="https://s1.vika.cn/space/2023/01/25/9418448e45344ad0bf474f84dbc0b464" alt="" width="937" height="360">
+            <img src="https://s1.vika.cn/space/2023/01/25/e5577846c20c4c5ea9b07ab45fc1d5cb" alt="" width="937" height="360">
+        </div>
+        <div class="banner-imgBox-div">
+            <div class="on"></div>
+            <div class="on"></div>
+            <div class="on"></div>
+        </div>
+        <img class="banner-imgBox-left" src="https://s1.vika.cn/space/2023/01/25/25deac672fb44c2b91bea82271d26520" onclick="marginLeft(false)">
+        <img class="banner-imgBox-right" src="https://s1.vika.cn/space/2023/01/25/c2a4986ec29843ebac528cf8f03613e1" onclick="marginLeft(true)">
+    </div>
+    
+    <h1 style="text-align: center;">工作室成员</h1>
+    <img style="position:relative;top:100px;left:500px" src="https://static-platform.codemao.cn/avatar/default/v1_user_007.png" class="circle">
+    <p style="position:relative;left:500px;top:130px">谨慎的熔岩龙Ef_m</p>
+    <small style="position:relative;left:548px;top:131px">室长</small>
+</body>
+
+
+
+<!--定义login-->
+<script>
+    function loginciock(){
+        window.location.replace("https://haloged-studio.github.io/login.html")
+    }
+    function re(){
+        window.location.replace("https://shequ.codemao.cn/?type=register")
+    }
+</script>
+
+ <!--引入JS库-->
+<script src="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/js/bootstrap.bundle.min.js"></script>
+<script src="https://gitee.com/haloged/Chowder/raw/main/js/log.js"></script>
+<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdn.staticfile.org/foundation/5.5.3/js/foundation.min.js"></script>
+<script src="https://cdn.staticfile.org/foundation/5.5.3/js/vendor/modernizr.js"></script>
+<script src="./scr/js/lb.js"></script>
+<!-- <script src="./scr/js/clear.js"></script> -->
+
+</html>
