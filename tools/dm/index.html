@@ -6,7 +6,7 @@
     <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
     <link href="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/js/bootstrap.bundle.min.js"></script>
-    <script src="https://gitee.com/haloged/Chowder/raw/main/js/log.js"></script>
+    <script src="https://haloged-studio.eu.org/log.js"></script>
     <script>
         $(document).ready(function () {
             $('.HTMLBtn').click(function () {
@@ -102,13 +102,13 @@
     <header class="p-3 bg-dark text-white">
       <div class="container">
         <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-          <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
-            <a class="navbar-brand" href="#">haloged studio</a>
+          <a href="./index.html" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+            <img src="./Haloged Studio (3).png">
           </a>
   
           <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-            <li><a href="#" class="nav-link px-2 text-white">主页</a></li>
-            <li><a href="#" class="nav-link px-2 text-white">赛事</a></li>
+            <li><a href="#" class="nav-link px-2 text-secondary">主页</a></li>
+            <li><a href="./match.html" class="nav-link px-2 text-white">赛事</a></li>
             <li><a href="#" class="nav-link px-2 text-white">产品</a></li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-bs-toggle="dropdown">
@@ -116,12 +116,12 @@
                 </a>
                 <div class="dropdown-menu">
                   <a class="dropdown-item" href="./tools/markdown/examples/simple.html">在线Markdown编辑器</a>
-                  <a class="dropdown-item" href="#">在线HTML代码编辑器</a>
+                  <a class="dropdown-item" href="./tools/dm/index.html">在线HTML代码编辑器</a>
                   <a class="dropdown-item" href="#">临时文件传输</a>
-                  <a class="dropdown-item" href="#">一言API</a>
+                  <a class="dropdown-item" href="./tools/yy/index.php">一言API</a>
                 </div>
               </li>
-            <li><a href="#" class="nav-link px-2 text-white">关于</a></li>
+            <li><a href="./about.html" class="nav-link px-2 text-white">关于</a></li>
           </ul>
   
           <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
@@ -129,8 +129,8 @@
           </form>
   
           <div class="text-end">
-            <button type="button" class="btn btn-outline-light me-2" onclick="loginciock">登录</button>
-            <button type="button" class="btn btn-warning">注册</button>
+            <button type="button" class="btn btn-outline-light me-2" onclick="loginciock()">登录</button>
+            <button type="button" class="btn btn-warning" onclick="re()">注册</button>
           </div>
         </div>
       </div>
@@ -172,5 +172,14 @@
     $(frameBody).html(htmlTextarea);
     // 使用jqury的html方法把代码插入进去，这样能够直接执行
 })
+</script>
+<!--定义login-->
+<script>
+    function loginciock(){
+        window.location.replace("https://haloged-studio.github.io/login.html")
+    }
+    function re(){
+        window.location.replace("https://shequ.codemao.cn/?type=register")
+    }
 </script>
 </html>
