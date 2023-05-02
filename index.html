@@ -56,21 +56,28 @@
         </div>
       </div>
     </header>
-    
-    <div class="banner-imgBox">
-        <div class="banner-imgBox2">
-            <img src="https://s1.vika.cn/space/2023/01/25/49e4a728fbe64fb4a305ddf7a733e418" alt="" width="937" height="360">
-            <img src="https://s1.vika.cn/space/2023/01/25/9418448e45344ad0bf474f84dbc0b464" alt="" width="937" height="360">
-            <img src="https://s1.vika.cn/space/2023/01/25/e5577846c20c4c5ea9b07ab45fc1d5cb" alt="" width="937" height="360">
-        </div>
-        <div class="banner-imgBox-div">
-            <div class="on"></div>
-            <div class="on"></div>
-            <div class="on"></div>
-        </div>
-        <img class="banner-imgBox-left" src="https://s1.vika.cn/space/2023/01/25/25deac672fb44c2b91bea82271d26520" onclick="marginLeft(false)">
-        <img class="banner-imgBox-right" src="https://s1.vika.cn/space/2023/01/25/c2a4986ec29843ebac528cf8f03613e1" onclick="marginLeft(true)">
-    </div>
+    <div class="main">
+      <!-- 三个单选按钮，先默认选择第一个 -->
+      <input type="radio" name="choose" id="choose1" checked>
+      <input type="radio" name="choose" id="choose2">
+      <input type="radio" name="choose" id="choose3">      
+      <input type="radio" name="choose" id="choose4">
+      <input type="radio" name="choose" id="choose5">  
+      <!-- 放三张图片，用背景图片表示 ，都给两个选择器 -->
+      <div class="item item1"></div>
+      <div class="item item2"></div>
+      <div class="item item3"></div>
+      <div class="item item4"></div>
+      <div class="item item5"></div>
+      <!-- 三个label标签 -->
+       <span class="select">
+           <label for="choose1"></label>
+           <label for="choose2"></label>
+           <label for="choose3"></label>
+           <label for="choose4"></label>
+           <label for="choose5"></label>
+       </span>
+  </div>
     
     <h1 style="text-align: center;">工作室成员</h1>
     <img style="position:relative;top:100px;left:500px" src="https://static-platform.codemao.cn/avatar/default/v1_user_007.png" class="circle">
