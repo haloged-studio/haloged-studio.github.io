@@ -15,8 +15,9 @@
     transition: all 0.5s;
     background-size: cover;
 }
+
 .item1{
-    background-image: url(https://f.pz.al/pzal/2023/05/02/b520bc0d18bea.jpg);
+    background-image: url(https://s3.uuu.ovh/imgs/2023/06/09/0cb541f315454ed0.png);
  }
  .item2{
      background-image: url(https://f.pz.al/pzal/2023/05/02/245e819cfedfd.jpg);
@@ -32,6 +33,10 @@
 }
 .item5{
     background-image: url(https://f.pz.al/pzal/2023/05/02/834cf48b3ac67.png);
+    left: 400%;
+}
+.item6{
+    background-image: url(https://f.pz.al/pzal/2023/05/02/b520bc0d18bea.jpg);
     left: 400%;
 }
 input{
@@ -74,6 +79,9 @@ input{
 .main input:nth-of-type(5):checked ~ .select label:nth-of-type(5){
     background-color: rgb(26, 26, 26);
 }
+.main input:nth-of-type(6):checked ~ .select label:nth-of-type(5){
+    background-color: rgb(26, 26, 26);
+}
 .main input:nth-of-type(1):checked ~ .item{
     transform: translateX(0);
 }
@@ -87,6 +95,9 @@ input{
     transform: translateX(-300%);
 }
 .main input:nth-of-type(5):checked ~ .item{
+    transform: translateX(-400%);
+}
+.main input:nth-of-type(6):checked ~ .item{
     transform: translateX(-400%);
 }
 
