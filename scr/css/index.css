@@ -37,7 +37,7 @@
 }
 .item6{
     background-image: url(https://f.pz.al/pzal/2023/05/02/b520bc0d18bea.jpg);
-    left: 400%;
+    left: 500%;
 }
 input{
     position: relative;
@@ -98,7 +98,7 @@ input{
     transform: translateX(-400%);
 }
 .main input:nth-of-type(6):checked ~ .item{
-    transform: translateX(-400%);
+    transform: translateX(-500%);
 }
 
 .circle{
