@@ -1,105 +1,57 @@
+/* 
+轮播图demo
+*/
+.banner-container{
+    width:1200px;
+    height:400px;
+    margin:0px auto;
+    position:relative;
+    overflow: hidden;/*用于隐藏超出展示容器的内容部分*/
+}
+.banner-image-container{
+    width:6000px;
+    height:400px;
+    margin:0px auto;
+    animation:text 30s infinite  linear;
+    font-size:0px;/*消除图片间隔*/
+    
+}
+.banner-image-container img{
+    width:1200px;
+    height:400px;
+    float:left;
+}
 
-.main{
-    position: relative;
-    width: 945px;
-    height: 400px;
-    overflow: hidden;
-    border-radius: 5px;
-    left:450px;
-}
-.item{
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    transition: all 0.5s;
-    background-size: cover;
+/* 轮播图关键帧 */
+@keyframes text {          /*0%-20%是播放下一个图片，0%-10%是图片暂停的时间*/
+    0%,10%{
+        /* margin-left:0px; */
+        transform: translateX(0px);
+    }
+    20%,30%{
+        /* margin-left:-1200px; */
+        transform: translateX(-1200px);
+    }
+    40%,50%{
+        /* margin-left:-2400px; */
+        transform: translateX(-2400px);
+    }
+    60%,70%{
+        /* margin-left:-3600px; */
+        transform: translateX(-3600px);
+    }
+    80%,90%{
+        /* margin-left:-4800px; */
+        transform: translateX(-4800px);
+    }
+    100%,110%{
+        /* margin-left: 0px; */
+        transform: translateX(0px);
+    }
 }
 
-.item1{
-    background-image: url(https://s3.uuu.ovh/imgs/2023/06/09/0cb541f315454ed0.png);
- }
- .item2{
-     background-image: url(https://f.pz.al/pzal/2023/05/02/245e819cfedfd.jpg);
-     left: 100%;
- }
- .item3{
-     background-image: url(https://f.pz.al/pzal/2023/05/02/310f6f3212dbb.png);
-     left: 200%;
- } 
- .item4{
-    background-image: url(https://f.pz.al/pzal/2023/05/02/ca47e566c4c32.jpg);
-    left: 300%;
-}
-.item5{
-    background-image: url(https://f.pz.al/pzal/2023/05/02/834cf48b3ac67.png);
-    left: 400%;
-}
-.item6{
-    background-image: url(https://f.pz.al/pzal/2023/05/02/b520bc0d18bea.jpg);
-    left: 500%;
-}
-input{
-    position: relative;
-    z-index: 100;
-    display: none;
-}
-.select{
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 60px;
-    height: 10px;
-    z-index: 1;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;         
-}
-.select>label{
-    width: 10px;
-    height: 10px;
-    background-color: rgb(255, 255, 255);
-    border-radius: 50%;
-    cursor: pointer;
-    border: 1.5px solid white;
-}
-.main input:nth-of-type(1):checked ~ .select label:nth-of-type(1){
-    background-color: rgb(26, 26, 26);
-}
-.main input:nth-of-type(2):checked ~ .select label:nth-of-type(2){
-    background-color: rgb(26, 26, 26);
-}
-.main input:nth-of-type(3):checked ~ .select label:nth-of-type(3){
-    background-color: rgb(26, 26, 26);
-}
-.main input:nth-of-type(4):checked ~ .select label:nth-of-type(4){
-    background-color: rgb(26, 26, 26);
-}
-.main input:nth-of-type(5):checked ~ .select label:nth-of-type(5){
-    background-color: rgb(26, 26, 26);
-}
-.main input:nth-of-type(6):checked ~ .select label:nth-of-type(5){
-    background-color: rgb(26, 26, 26);
-}
-.main input:nth-of-type(1):checked ~ .item{
-    transform: translateX(0);
-}
-.main input:nth-of-type(2):checked ~ .item{
-    transform: translateX(-100%);
-}
-.main input:nth-of-type(3):checked ~ .item{
-    transform: translateX(-200%);
-}
-.main input:nth-of-type(4):checked ~ .item{
-    transform: translateX(-300%);
-}
-.main input:nth-of-type(5):checked ~ .item{
-    transform: translateX(-400%);
-}
-.main input:nth-of-type(6):checked ~ .item{
-    transform: translateX(-500%);
-}
+
+
 
 .circle{
     width:120px; 
