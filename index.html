@@ -93,7 +93,7 @@
         <p class="deyihei" style="text-align: right;">2023.9.8</p>
       </div>
       <div class="mdui-dialog-actions">
-        <button class="mdui-btn mdui-ripple"  mdui-dialog-cancel>关闭</button>
+        <button class="mdui-btn mdui-ripple"  mdui-dialog-close	>关闭</button>
       </div>
     </div>
 </body>
@@ -112,12 +112,6 @@
   var $ = mdui.$;
   var inst = new mdui.Dialog('#dialog');
   inst.open();
-  $('#dialog').on('close.mdui.dialog', function () {
-    inst.close()
-  });
-  $('#dialog').on('cancel.mdui.dialog', function () {
-    inst.close()	
-  });
 </script>
 
  <!--引入JS库-->
