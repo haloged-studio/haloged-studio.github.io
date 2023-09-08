@@ -1,0 +1,8 @@
+@font-face {
+    font-family:'deyihei';
+    src: url(../font/SmileySans-Oblique.ttf);
+}
+.deyihei{
+    font-family: 'deyihei';
+    text-shadow: none;
+}
