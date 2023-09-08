@@ -113,10 +113,10 @@
   var inst = new mdui.Dialog('#dialog');
   inst.open();
   $('#dialog').on('close.mdui.dialog', function () {
-    console.log('close');
+    inst.close()
   });
   $('#dialog').on('cancel.mdui.dialog', function () {
-    console.log('cancel');
+    inst.close()	
   });
 </script>
 
