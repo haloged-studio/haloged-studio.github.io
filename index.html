@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="shortcut icon" href="https://static.codemao.cn/coco/player/unstable/HJfhP2bD2.image/png?hash=FoJ5JxvOlaVEUJM56LYITJ3KDwS9" type="image/x-icon">
+    <link rel="shortcut icon" href="./scr/img/shorticon.png" type="image/x-icon">
     <link href="./scr/css/index.css" rel="stylesheet">
     <link href="./scr/css/reset.css" rel="stylesheet">
     <link href="./scr/css/font.css" rel="stylesheet">
@@ -17,7 +17,7 @@
       <div class="container">
         <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
           <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
-            <img src="https://static.codemao.cn/coco/player/unstable/SkML89Wv2.image/png?hash=FpQmPsglBgL6lCq061lWnJD_2gMF">
+            <img src="./scr/img/nar_logo.png">
           </a>
   
           <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
@@ -31,7 +31,7 @@
               <div class="dropdown-menu">
                 <a class="dropdown-item" href="./tools/markdown/examples/simple.html" target="_blank">在线Markdown编辑器</a>
                 <a class="dropdown-item" href="./tools/dm/index.html" target="_blank">在线HTML编辑器</a>
-                <a class="dropdown-item" href="./tools/yy/index.php" target="_blank">一言API</a>
+                <a class="dropdown-item" href="./tools/yy/index.php" target="_blank">114514API</a>
               </div>
             </li>
           <li><a href="./about.html" class="nav-link px-2 text-black">关于</a></li>
@@ -52,7 +52,7 @@
           </form>
   
           <div class="text-end">
-            <button type="button" class="btn btn-outline-black me-2">登录</button>
+            <button type="button" class="btn btn-outline-black me-2" onclick="loginciock()">登录</button>
             <button type="button" class="btn btn-warning">注册</button>
           </div>
         </div>
@@ -73,54 +73,18 @@
     </div>
     <p style="background:none;height: 5%;position: fixed;bottom: 0px;width: 100%;text-align: center;"><a href="https://icp.gov.moe/?keyword=20238891" target="_blank">萌ICP备20238891号</a></p>
 
-    <div class="mdui-dialog" id="dialog">
-      <div class="mdui-dialog-title">Haloged Studio官网即将重构</div>
-      <div class="mdui-dialog-content">
-        <h1 class="deyihei" style="text-align: center;">通知</h1>
-        <h6 class="deyihei">尊敬的客户:</h6>
-        </br>
-        <p class="deyihei">&ensp;&ensp;您好。我们非常高兴地宣布，Haloged Studio官方网站即将进行一次全面的重构。这次重构旨在提升网站的性能、用户体验和易用性，为您提供更加优质的内容和服务。</p>
-        </br>
-        <p class="deyihei">&ensp;&ensp;为了确保重构工作的顺利进行，我们将在2023年9月8日20点至9月10日24点期间暂停网站的访问。在此期间，您可能无法正常访问我们的网站。我们对由此给您带来的不便表示诚挚的歉意，并感谢您的理解和支持。</p>
-        </br>
-        <p class="deyihei">&ensp;&ensp;重构完成后，我们的官方网站将焕然一新，为您带来更加便捷、高效的在线体验。我们期待您的访问，并希望您能在新的网站上找到您需要的所有信息和服务。</p>
-        </br>
-        <p class="deyihei">&ensp;&ensp;再次感谢您对Haloged Studio的支持，如果您有任何疑问或需要进一步的帮助，请随时通过电子邮件或各大平台官方账号与我们联系。</p>
-        </br>
-        <p class="deyihei">祝您生活愉快！</p>
-        </br>
-        <p class="deyihei" style="text-align: right;">Haloged Studio</p>
-        <p class="deyihei" style="text-align: right;">2023.9.8</p>
-      </div>
-      <div class="mdui-dialog-actions">
-        <button class="mdui-btn mdui-ripple"  mdui-dialog-close	>关闭</button>
-      </div>
-    </div>
+
 </body>
-<!--定义login-->
-<script>
-    function loginciock(){
-        window.location.replace("https://haloged-studio.github.io/login.html")
-    }
-    function re(){
-        window.location.replace("https://shequ.codemao.cn/?type=register")
-    }
-</script>
-<!--弹出更新预告-->
-<script src="https://unpkg.com/mdui@1.0.2/dist/js/mdui.min.js"></script>
-<script>
-  var $ = mdui.$;
-  var inst = new mdui.Dialog('#dialog',{"history":false});
-  inst.open();
-</script>
+
 
  <!--引入JS库-->
-<script src="https://cdn.staticfile.org/popper.js/2.9.3/umd/popper.min.js"></script>
-<script src="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/js/bootstrap.min.js"></script>
-<script src="https://cdn.staticfile.org/jquery/3.7.0/jquery.min.js"></script>
+<script src="https://cdn.haloged.eu.org/bootstrap5/popper.min.js"></script>
+<script src="https://cdn.haloged.eu.org/bootstrap5/bootstrap.min.js"></script>
+<script src="https://cdn.haloged.eu.org/jquery/code.jquery.com_jquery-3.7.0.min.js"></script>
 <script src="https://cdn.staticfile.org/foundation/6.7.5/js/foundation.min.js"></script>
 <script src="https://cdn.staticfile.org/foundation/5.5.3/js/vendor/modernizr.js"></script>
 <script src="https://cdn.haloged.eu.org/log.js"></script>
+<script src="./scr/js/botton.js"></script>
  <!--<script src="./scr/js/lb.js"></script>-->
  <!-- <script src="./scr/js/clear.js"></script> -->
 </html>
